@@ -1,0 +1,34 @@
+1) Typescript provides 3 benefits. Easy to read Easy to write Easy to maintain  
+
+
+2) Typescript is a superset of javascript
+
+3) Javascript is a dynamically typed language 
+Example = let firstName = "Jay"
+firstName = 100;
+firstName = true;
+
+console.log(firstName) // true
+
+Typescript is a statically typed language 
+let firstName:string = "Jay"
+firstName = 100
+firstName = true 
+
+console.log(firstName) // error firstName must be a string or something like that
+
+
+4) TypeScript catches errors at compile time
+instead of runtime, which makes
+debugging easier and reduces the
+likelihood of bugs in production.
+
+
+5) Browsers don't support TypeScript so the TypeScript file will compile to a javascript file then it will run in Browser
+
+
+
+6)ts and tsx 
+
+tsx use for files that include JSX
+ts is for a normal js file 
