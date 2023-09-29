@@ -1,0 +1,8 @@
+tsc --init to create ts config file 
+
+
+1) Uncomment  "noEmitOnError": true,  
+so tsc index.ts will not create a js file for us if there is an error in index.ts it will not create index.js when there is no error in index.ts
+then type tsc in terminal now index.js will not be created if there is any error in index.ts
+
+or we can simply type noEmitOnError  
