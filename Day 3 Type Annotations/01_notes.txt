@@ -1,0 +1,19 @@
+What is Type Annotation:- Way to explicitly specify the type of variable
+
+Different type of Types in TS
+
+unknown
+undefined
+Void
+Any 
+Array
+null
+number
+Bool
+Never 
+String
+Enum
+Symbol
+object
+Tuple
+etc.
