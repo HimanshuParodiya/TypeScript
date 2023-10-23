@@ -1,0 +1,59 @@
+Unknown
+The unknown type is the safer alternative to any. Because it enforces type safety or type-checking.
+
+// Type Checking 
+let myNumber = 5 ----- type is number
+myNumber = true ----- error bool is not assignable to type number
+
+TypeScript's static type checking helps catch type-related errors early in the development process, which is a significant advantage for maintaining code quality and preventing runtime errors.
+
+// Type Safety
+
+function multiply(a: number, b: number): number {
+    return a * b;
+}
+
+let result: number = multiply(3, 4); // Type-safe call
+
+Type error: Argument types don't match the function signature
+let invalid Result: number = multiply("3", 4);
+
+ TypeScript enforces type safety by checking that functions are called with the correct argument types and that the return values match the expected types
+
+
+// So Unknown gives us this power
+
+// Use-case of Unknown
+It holds the value of any type 
+but we must perform type checks or type assertions before using them in a specific way.
+
+
+So it is used to be the data type until we don't know.
+
+example 
+let getData: unknown; // right now I don't know what the could be the data It could be a number, string, or bool
+
+getData = false;
+getData = {};
+getData = 5
+
+predict if getData is {} i will loop through it
+if(type getData === object){
+    // perform task
+}
+
+// Real World example of unknown
+
+async function getData(): Promise<unknown> { // this is the use case (we have use unknown in generics way we will understand it later)
+    const response = await fetch('https://example/api/data');
+    const data = await response.json();
+    return data;
+}
+
+async function processData(){
+    const response = await getData();
+
+    if(type response === 'object'){
+        // perform task
+    }
+}

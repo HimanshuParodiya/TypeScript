@@ -1,0 +1,7 @@
+1) Any Type 
+it is the most flexible type in the TypeScript.
+It Disable type safety and type checking for our code 
+
+// useCases of any type 
+
+i) working with dynamic data: When dealing with data from dynamic sources like user Input, Network response any type can be useful.
